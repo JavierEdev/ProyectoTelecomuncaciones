@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monitor de Lux</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans p-6">
+  <div class="max-w-4xl mx-auto bg-white shadow-md rounded-lg p-6">
+    <h1 class="text-3xl font-bold text-blue-600 mb-4">💡 Monitor de Lux</h1>
+    <p class="text-sm text-gray-500 mb-6">Actualización automática cada 3 segundos desde <code class="bg-gray-200 px-1 rounded">/api/Lux</code></p>
+    
+    <div class="bg-white rounded-lg shadow p-4">
+      <canvas id="luxChart" class="w-full"></canvas>
+    </div>
+
+    <div class="mt-6 text-sm text-gray-600">
+      <span>Última lectura:</span>
+      <span id="lastValue" class="font-semibold text-blue-700">Cargando...</span> lux
+    </div>
+  </div>
+</body>
+</html>
